@@ -10,7 +10,7 @@ android {
     compileSdkVersion(AppConfiguration.androidCompileSdkVersion)
 
     defaultConfig {
-        applicationId = "com.avanza.sadapayrough"
+        applicationId = "com.roshaan.githubapp"
         minSdkVersion(AppConfiguration.androidMinSdkVersion)
         targetSdkVersion(AppConfiguration.androidTargetSdkVersion)
         versionCode = AppConfiguration.versionCode
