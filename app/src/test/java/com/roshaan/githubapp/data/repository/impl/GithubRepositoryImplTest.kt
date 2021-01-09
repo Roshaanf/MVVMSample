@@ -56,7 +56,7 @@ class GithubRepositoryImplTest {
             val repositories = repositoryImpl.getRepositories(true)
 
             assertEquals(
-                repositories, getRepositoriesList()
+                getRepositoriesList(), repositories
             )
         }
     }
@@ -69,7 +69,7 @@ class GithubRepositoryImplTest {
             val repositories = repositoryImpl.getRepositories(true)
 
             assertEquals(
-                repositories, null
+                null, repositories
             )
         }
     }
@@ -105,7 +105,7 @@ class GithubRepositoryImplTest {
             val repositories = repositoryImpl.getRepositories(false)
 
             assertEquals(
-                repositories, getRepositoriesList()
+                getRepositoriesList(), repositories
             )
         }
     }
@@ -118,7 +118,7 @@ class GithubRepositoryImplTest {
             val repositories = repositoryImpl.getRepositories(false)
 
             assertEquals(
-                repositories, getRepositoriesList()
+                getRepositoriesList(), repositories
             )
         }
     }
@@ -171,7 +171,7 @@ class GithubRepositoryImplTest {
             val repositories = repositoryImpl.getRepositories(false)
 
             assertEquals(
-                repositories, getRepositoriesList()
+                getRepositoriesList(), repositories
             )
         }
     }
