@@ -41,6 +41,13 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    packagingOptions {
+        excludes += mutableSetOf(
+            "META-INF/AL2.0",
+            "META-INF/LGPL2.1"
+        )
+    }
 }
 
 dependencies {
@@ -84,6 +91,8 @@ dependencies {
     testImplementation(AndroidTestDependencies.androidXCoreTesting)
 
 
+    androidTestImplementation(AndroidTestDependencies.androidXCoreTesting)
+    androidTestImplementation(TestDependencies.coroutineTest)
     androidTestImplementation(AndroidTestDependencies.androidJUnit)
     androidTestImplementation(AndroidTestDependencies.espresseo)
 }
