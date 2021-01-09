@@ -77,6 +77,11 @@ dependencies {
     implementation(DevelopmentDependencies.swipeRefreshLayout)
 
     testImplementation(TestDependencies.junit)
+    testImplementation(TestDependencies.mockitoKotlin)
+    testImplementation(TestDependencies.coroutineTest)
+
+
+    testImplementation(TestDependencies.junit)
     androidTestImplementation(AndroidTestDependencies.androidJUnit)
     androidTestImplementation(AndroidTestDependencies.espresseo)
 }
