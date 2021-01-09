@@ -1,6 +1,7 @@
 package com.roshaan.githubapp.di.module
 
 import com.google.gson.Gson
+import com.roshaan.githubapp.BuildConfig
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -23,7 +24,7 @@ object RetrofitModule {
         converterFactory: GsonConverterFactory,
         okHttpClient: OkHttpClient
     ) = Retrofit.Builder()
-        .baseUrl("https://api.github.com/")
+        .baseUrl(BuildConfig.BASE_URL)
         .addConverterFactory(converterFactory)
         .client(okHttpClient)
         .build()
