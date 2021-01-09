@@ -13,8 +13,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.roshaan.githubapp.R
 import com.roshaan.githubapp.databinding.FragmentRepositoriesBinding
 import com.roshaan.githubapp.presentation.viewmodel.RepositoriesViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class RepositoriesFragment : Fragment(R.layout.fragment_repositories) {
     private var binding: FragmentRepositoriesBinding? = null
 
