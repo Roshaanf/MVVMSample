@@ -40,7 +40,7 @@ object DevelopmentDependencies {
     val ktxCore = "androidx.core:core-ktx:${Versions.ktxCoreVersion}"
     val materailDesign = "com.google.android.material:material:${Versions.materailDesign}"
     val constraintLayout =
-            "androidx.constraintlayout:constraintlayout:${Versions.constraintLayoutVersion}"
+        "androidx.constraintlayout:constraintlayout:${Versions.constraintLayoutVersion}"
 
     //    viewmodel ktx for viewmodelScope etc
     val viewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleVersion}"
@@ -49,11 +49,11 @@ object DevelopmentDependencies {
     val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}"
     val retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofitVersion}"
     val okhttpLoggingInterceptor =
-            "com.squareup.okhttp3:logging-interceptor:${Versions.okhttpLoggingInterceptorVersion}"
+        "com.squareup.okhttp3:logging-interceptor:${Versions.okhttpLoggingInterceptorVersion}"
 
     //   this dependecy contains coroutines also Dispatcher.Main which is specialized for android
     val coroutinesAndroid =
-            "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutineVersion}"
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutineVersion}"
 
     val roomKtx = "androidx.room:room-ktx:${Versions.roomVersion}"
     val roomCompiler = "androidx.room:room-compiler:${Versions.roomVersion}"
@@ -72,7 +72,7 @@ object DevelopmentDependencies {
     val lottie = "com.airbnb.android:lottie:${Versions.lottieVersion}"
 
     val swipeRefreshLayout =
-            "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipeRefreshLayoutVersion}"
+        "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipeRefreshLayoutVersion}"
 }
 
 
@@ -85,5 +85,6 @@ object TestDependencies {
 object AndroidTestDependencies {
     val androidJUnit = "androidx.test.ext:junit:1.1.2"
     val espresseo = "androidx.test.espresso:espresso-core:3.3.0"
+    val androidXCoreTesting = "androidx.arch.core:core-testing:2.1.0"
 
 }

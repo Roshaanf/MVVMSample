@@ -10,7 +10,7 @@ android {
     compileSdkVersion(AppConfiguration.androidCompileSdkVersion)
 
     defaultConfig {
-        applicationId = "com.roshaan.githubapp"
+        applicationId = "com.avanza.sadapayrough"
         minSdkVersion(AppConfiguration.androidMinSdkVersion)
         targetSdkVersion(AppConfiguration.androidTargetSdkVersion)
         versionCode = AppConfiguration.versionCode
@@ -23,8 +23,8 @@ android {
         getByName("release") {
             isMinifyEnabled = false
             proguardFiles(
-                    getDefaultProguardFile("proguard-android-optimize.txt"),
-                    "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
             )
         }
     }
@@ -79,9 +79,9 @@ dependencies {
     testImplementation(TestDependencies.junit)
     testImplementation(TestDependencies.mockitoKotlin)
     testImplementation(TestDependencies.coroutineTest)
+    testImplementation(AndroidTestDependencies.androidXCoreTesting)
 
 
-    testImplementation(TestDependencies.junit)
     androidTestImplementation(AndroidTestDependencies.androidJUnit)
     androidTestImplementation(AndroidTestDependencies.espresseo)
 }
