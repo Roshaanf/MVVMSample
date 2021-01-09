@@ -1,4 +1,4 @@
-package com.avanza.sadapayrough.presentation.view.adapter
+package com.roshaan.githubapp.presentation.view.adapter
 
 import android.view.LayoutInflater
 import android.view.View

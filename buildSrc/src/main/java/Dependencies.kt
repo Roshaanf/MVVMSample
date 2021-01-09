@@ -45,6 +45,7 @@ object DevelopmentDependencies {
     //    viewmodel ktx for viewmodelScope etc
     val viewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleVersion}"
     val fragmentKtx = "androidx.fragment:fragment-ktx:${Versions.fragmentKtxVersion}"
+    val legacySupport = "androidx.legacy:legacy-support-v4:1.0.0"
 
     val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}"
     val retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofitVersion}"

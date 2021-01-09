@@ -56,6 +56,8 @@ dependencies {
     implementation(DevelopmentDependencies.fragmentKtx)
     implementation(DevelopmentDependencies.coroutinesAndroid)
 
+    implementation(DevelopmentDependencies.legacySupport)
+
     implementation(DevelopmentDependencies.retrofit)
     implementation(DevelopmentDependencies.retrofitGsonConverter)
     implementation(DevelopmentDependencies.okhttpLoggingInterceptor)

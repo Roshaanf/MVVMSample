@@ -5,5 +5,5 @@
 
     <solid android:color="@color/gray0"/>
     <corners
-        android:radius="20dp" />
+        android:radius="@dimen/default_margin_large" />
 </shape>

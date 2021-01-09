@@ -5,6 +5,8 @@
     <dimen name="default_margin">10dp</dimen>
     <dimen name="default_margin_large">20dp</dimen>
 
+    <dimen name="strokes_radius">5dp</dimen>
+
     <dimen name="li_repository_margin_top_bottom">16dp</dimen>
     <dimen name="li_repository_avatar_height_width">40dp</dimen>
     <dimen name="li_repository_avatar_corner_radius">20dp</dimen>
