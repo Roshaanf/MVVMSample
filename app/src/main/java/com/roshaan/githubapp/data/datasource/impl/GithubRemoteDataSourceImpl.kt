@@ -1,9 +1,10 @@
-package com.avanza.sadapayrough.data.datasource.impl
+package com.roshaan.githubapp.data.datasource.impl
 
-import com.avanza.sadapayrough.data.GithubService
-import com.avanza.sadapayrough.data.datasource.GithubRemoteDataSource
-import com.avanza.sadapayrough.data.dto.RepositoryListDTO
-import com.avanza.sadapayrough.di.qualifier.DefaultDispatchcer
+
+import com.roshaan.githubapp.data.GithubService
+import com.roshaan.githubapp.data.datasource.GithubRemoteDataSource
+import com.roshaan.githubapp.data.dto.RepositoryListDTO
+import com.roshaan.githubapp.di.qualifier.DefaultDispatchcer
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

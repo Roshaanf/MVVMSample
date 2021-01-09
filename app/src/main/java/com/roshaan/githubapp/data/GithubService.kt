@@ -1,7 +1,6 @@
-package com.avanza.sadapayrough.data
+package com.roshaan.githubapp.data
 
-import com.avanza.sadapayrough.data.dto.RepositoryDTO
-import com.avanza.sadapayrough.data.dto.RepositoryListDTO
+import com.roshaan.githubapp.data.dto.RepositoryListDTO
 import retrofit2.http.GET
 
 interface GithubService {
