@@ -1,5 +1,6 @@
 package com.roshaan.githubapp.data.util
 
+import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -12,7 +13,7 @@ class Clock @Inject constructor() {
 
 //       checking if diff is greater thn 0 it may happen that user will change
 //       the time of device resulting in negative diff
-        val minutesPassed = getDifferenceInMinutes(fromTime, getCurrentTime())
+        val minutesPassed = TimeUnit.MILLISECONDS.toMinutes(getCurrentTime() - fromTime)
 
         if (minutesPassed > 0) {
             if (minutesPassed >= howManyInMinutes)
@@ -21,12 +22,6 @@ class Clock @Inject constructor() {
                 return false
         } else
             return false
-    }
-
-    private fun getDifferenceInMinutes(from: Long, to: Long): Long {
-        val timeDifference = to - from
-
-        return timeDifference / (60 * 1000)
     }
 
 }

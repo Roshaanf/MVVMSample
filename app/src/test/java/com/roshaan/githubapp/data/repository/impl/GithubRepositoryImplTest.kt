@@ -259,7 +259,6 @@ class GithubRepositoryImplTest {
     }
 
     private fun getRepositoriesEntityListWithoutTime(): List<RepositoryEntity> {
-        val currentTime = System.currentTimeMillis()
 
         val repositoryEntityItem1 = RepositoryEntity(
             id = 1,
