@@ -45,6 +45,7 @@ object DevelopmentDependencies {
     //    viewmodel ktx for viewmodelScope etc
     val viewModelKtx = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycleVersion}"
     val fragmentKtx = "androidx.fragment:fragment-ktx:${Versions.fragmentKtxVersion}"
+    val legacySupport = "androidx.legacy:legacy-support-v4:1.0.0"
 
     val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofitVersion}"
     val retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofitVersion}"
@@ -78,10 +79,13 @@ object DevelopmentDependencies {
 
 object TestDependencies {
     val junit = "junit:junit:4.+"
+    val mockitoKotlin = "com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0"
+    val coroutineTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.2"
 }
 
 object AndroidTestDependencies {
     val androidJUnit = "androidx.test.ext:junit:1.1.2"
     val espresseo = "androidx.test.espresso:espresso-core:3.3.0"
+    val androidXCoreTesting = "androidx.arch.core:core-testing:2.1.0"
 
 }

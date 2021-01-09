@@ -10,7 +10,7 @@ android {
     compileSdkVersion(AppConfiguration.androidCompileSdkVersion)
 
     defaultConfig {
-        applicationId = "com.roshaan.githubapp"
+        applicationId = "com.avanza.sadapayrough"
         minSdkVersion(AppConfiguration.androidMinSdkVersion)
         targetSdkVersion(AppConfiguration.androidTargetSdkVersion)
         versionCode = AppConfiguration.versionCode
@@ -23,9 +23,16 @@ android {
         getByName("release") {
             isMinifyEnabled = false
             proguardFiles(
-                    getDefaultProguardFile("proguard-android-optimize.txt"),
-                    "proguard-rules.pro"
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
             )
+
+            buildConfigField("String", "BASE_URL", "\"https://api.github.com/\"")
+
+
+        }
+        getByName("debug") {
+            buildConfigField("String", "BASE_URL", "\"https://api.github.com/\"")
         }
     }
 
@@ -41,6 +48,13 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    packagingOptions {
+        excludes += mutableSetOf(
+            "META-INF/AL2.0",
+            "META-INF/LGPL2.1"
+        )
+    }
 }
 
 dependencies {
@@ -55,6 +69,8 @@ dependencies {
     implementation(DevelopmentDependencies.viewModelKtx)
     implementation(DevelopmentDependencies.fragmentKtx)
     implementation(DevelopmentDependencies.coroutinesAndroid)
+
+    implementation(DevelopmentDependencies.legacySupport)
 
     implementation(DevelopmentDependencies.retrofit)
     implementation(DevelopmentDependencies.retrofitGsonConverter)
@@ -77,6 +93,13 @@ dependencies {
     implementation(DevelopmentDependencies.swipeRefreshLayout)
 
     testImplementation(TestDependencies.junit)
+    testImplementation(TestDependencies.mockitoKotlin)
+    testImplementation(TestDependencies.coroutineTest)
+    testImplementation(AndroidTestDependencies.androidXCoreTesting)
+
+
+    androidTestImplementation(AndroidTestDependencies.androidXCoreTesting)
+    androidTestImplementation(TestDependencies.coroutineTest)
     androidTestImplementation(AndroidTestDependencies.androidJUnit)
     androidTestImplementation(AndroidTestDependencies.espresseo)
 }
