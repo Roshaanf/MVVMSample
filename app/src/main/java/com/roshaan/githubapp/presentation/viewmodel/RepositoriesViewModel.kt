@@ -45,7 +45,7 @@ class RepositoriesViewModel @ViewModelInject constructor(
                 updateMutableLiveData(_reyclerViewVisibility, false)
             }
 
-            val repositories = githubRepository.getRepositories(true)
+            val repositories = githubRepository.getRepositories(isHardrefresh)
 
             updateMutableLiveData(_shimmerVisibility, false)
             _swipeLoaderVisibility.value = false
